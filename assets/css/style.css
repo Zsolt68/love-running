@@ -206,6 +206,14 @@ footer {
   padding: 5%;
   color: #3a3a3a;
 }
+/*Media query:large or landscape phones (576px and up)*/
+@media screen and (min-width:570px){
+    #photos{
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 
 /*Media query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
@@ -256,11 +264,17 @@ footer {
     text-align: end;
     align-self: flex-end;
   }
+  #photos{
+    column-count: 3;
+  }
 }
 /*Large devices (laptops and desktops, 992px and up)*/
 @media screen and (min-width: 992px) {
   #menu a:hover {
     border-bottom: 1 px solid #3a3a3a;
+    #photos{
+    column-count: 3;
+  }
   }
 }
 
